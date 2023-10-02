@@ -1,0 +1,49 @@
+.cell {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cell.open {
+    background-color: #fff;
+  }
+  
+  .cell.matched {
+    background-color: #8aff8a;
+  }
+  
+  .shape {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+  }
+  
+  .shape.circle {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid;
+  }
+  
+  .shape.square {
+    background-color: transparent;
+    border: 3px solid;
+  }
+  
+  .shape.triangle {
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 52px solid;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+  
